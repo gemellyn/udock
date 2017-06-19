@@ -1,0 +1,10 @@
+compiler en release
+dans global.h : #define public_release
+editeur de lien / fichier manifeste : mode admin
+laisser un fichier dans logs pour avoir le rep dans l'install
+mettre à jour la version dans le script getUser.php
+
+//Pour avoir plusieurs set de molecules (a confirmer):
+-> n'jouter que les molecules qu'on veut pour cette version à l'installation
+-> attention chaque molécule a son propre id
+-> dans la base bien mettre le bon set id

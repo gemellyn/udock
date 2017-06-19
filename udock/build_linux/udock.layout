@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="../../engine/src/external/bullet/src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuContactResult.cpp" open="0" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1363" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/molecules/molecule.cpp" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8680" topLine="324" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/render/camera.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="649" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/molecules/marching_cubes/molecule_cubes.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="580" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/gui/combox.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="837" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/log/log_console.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="444" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/gui/bouton.h" open="0" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1054" topLine="40" />
+		</Cursor>
+	</File>
+	<File name="../src/game_states/load_state.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="842" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/gui/progressbar.h" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1036" topLine="43" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletSoftBody/btSoftBodyInternals.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5267" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/physics/physic_engine.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1980" topLine="46" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/utils/types_3d.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13251" topLine="689" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletMultiThreaded/HeapManager.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1797" topLine="44" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/gui/screen_manager.h" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="488" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/render/text/FreeType.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="../src/ships/ship.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1152" topLine="41" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/render/graph/tex_manager.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6344" topLine="220" />
+		</Cursor>
+	</File>
+	<File name="../src/network/http_manager_public_deco.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4097" topLine="82" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletCollision/CollisionShapes/btCompoundShape.cpp" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2790" topLine="61" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/sound/sound.h" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1938" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="../src/main.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="52254" topLine="1661" />
+		</Cursor>
+	</File>
+	<File name="../src/molecules/molecules_manager.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3094" topLine="93" />
+		</Cursor>
+	</File>
+	<File name="../src/game_states/choose_mol_state.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2787" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletMultiThreaded/vectormath2bullet.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1449" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/network/http_manager.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="888" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/utils/ny_utils.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1355" topLine="78" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/log/log.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="887" topLine="22" />
+		</Cursor>
+	</File>
+	<File name="../src/molecules/marching_cubes/molecule_cubes.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="603" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/gui/image.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="326" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/particles/particles_emitter.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1811" topLine="53" />
+		</Cursor>
+	</File>
+	<File name="../src/tutorial/tutorial.h" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1142" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/molecules/marching_cubes/marching_cubes.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="57542" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/molecules/molecule.h" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4017" topLine="139" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/gui/panel.h" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1158" topLine="29" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/utils/ny_utils.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="877" topLine="32" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/render/text/FreeType.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5277" topLine="136" />
+		</Cursor>
+	</File>
+	<File name="../src/molecules/atom.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2800" topLine="17" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/gui/lstbox.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5618" topLine="238" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/utils/quaternion.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4154" topLine="166" />
+		</Cursor>
+	</File>
+	<File name="../src/log/log_actions_reader.h" open="0" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="286" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletMultiThreaded/btParallelConstraintSolver.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7821" topLine="164" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/render/renderer.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="19297" topLine="610" />
+		</Cursor>
+	</File>
+	<File name="../src/network/http_job_login.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="973" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletCollision/CollisionDispatch/btBox2dBox2dCollisionAlgorithm.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10340" topLine="318" />
+		</Cursor>
+	</File>
+	<File name="../src/ships/projectile.h" open="0" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1346" topLine="39" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletCollision/CollisionDispatch/btConvex2dConvex2dAlgorithm.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4653" topLine="102" />
+		</Cursor>
+	</File>
+	<File name="../src/network/http_job_post_scores.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1098" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="../src/game_states/mol_state.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3113" topLine="106" />
+		</Cursor>
+	</File>
+	<File name="../src/game_states/choose_mol_state.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="99" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/hasher_3d.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4393" topLine="149" />
+		</Cursor>
+	</File>
+	<File name="../src/game_states/ship_state.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11785" topLine="384" />
+		</Cursor>
+	</File>
+	<File name="../src/ships/ships_manager.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1364" topLine="47" />
+		</Cursor>
+	</File>
+	<File name="../src/molecules/marching_cubes/marching_cubes.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="30627" topLine="549" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/utils/types.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="613" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/network/http_manager_total_deco.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="94" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/timer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="954" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/log/log_file.h" open="1" top="1" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1056" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/sound/granular_sound.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4607" topLine="113" />
+		</Cursor>
+	</File>
+	<File name="../src/ressource.h" open="0" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletSoftBody/btSoftBody.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5219" topLine="177" />
+		</Cursor>
+	</File>
+	<File name="../src/network/http_job_add_play_time.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="909" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletCollision/CollisionDispatch/btCollisionWorld.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2493" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="../src/log/log_screen.h" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="232" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/network/http_job_upload_log.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="866" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="../src/network/http_manager_udock.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="14979" topLine="526" />
+		</Cursor>
+	</File>
+	<File name="../src/log/log_actions.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4209" topLine="178" />
+		</Cursor>
+	</File>
+	<File name="../src/game_states/mol_2d_state.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="33690" topLine="1064" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/gui/screen.h" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2071" topLine="75" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/BulletCollision/Gimpact/gim_tri_collision.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12444" topLine="447" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/utils/quaternion.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="40" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/external/bullet/src/MiniCL/MiniCL.cpp" open="0" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="19613" topLine="625" />
+		</Cursor>
+	</File>
+	<File name="../../engine/src/engine/render/text/text_engine.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="237" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="../src/game_states/game_state.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="737" topLine="8" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

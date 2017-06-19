@@ -1,0 +1,111 @@
+ENGINE_INFO [000001] LogFile added
+ENGINE_INFO [000001] LogScreen added
+ENGINE_INFO [000000] arg w asking window mode
+ENGINE_INFO [000001] arg a asking for admin ui
+ENGINE_INFO [000000] arg l asking to show full log
+ENGINE_INFO [000000] arg d asking for public disconect
+ENGINE_INFO [000000] arg d asking for total disconected
+ENGINE_INFO [000001] arg asking for no ship mode
+ENGINE_INFO [000070] SDL Init Ok
+ENGINE_INFO [000350] SDL Window Ok
+ENGINE_INFO [000006] SDL GL context Ok
+ENGINE_INFO [000007] GLEW init Ok
+ENGINE_INFO [000010] Reset FBO
+ENGINE_INFO [000006] Shader shaders/postprocess/pshader.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/postprocess/pshader.glsl : 0(67) : warning C7533: global variable gl_TexCoord is deprecated after version 120
+0(271) : warning C7533: global variable gl_FragColor is deprecated after version 120
+
+ENGINE_INFO [000003] Reset FBO
+ENGINE_INFO [000014] OpenGL version 4.4.0
+ENGINE_INFO [000000] Shader shaders/psmol.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/psmol.glsl : 
+ENGINE_INFO [000000] Shader shaders/vsmol.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/vsmol.glsl : 
+ENGINE_INFO [000002] Shader shaders/sphere/psmol.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/sphere/psmol.glsl : 
+ENGINE_INFO [000001] Shader shaders/sphere/vsmol.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/sphere/vsmol.glsl : 
+ENGINE_INFO [000001] Shader shaders/sphere/gsmol.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/sphere/gsmol.glsl : 
+ENGINE_INFO [000003] Shader shaders/sphere/sphere_mix/pshader.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/sphere/sphere_mix/pshader.glsl : 0(33) : warning C7011: implicit cast from "int" to "float"
+0(34) : warning C7011: implicit cast from "int" to "float"
+0(36) : warning C7011: implicit cast from "int" to "float"
+0(37) : warning C7011: implicit cast from "int" to "float"
+0(41) : warning C7011: implicit cast from "int" to "float"
+0(42) : warning C7011: implicit cast from "int" to "float"
+0(44) : warning C7011: implicit cast from "int" to "float"
+0(45) : warning C7011: implicit cast from "int" to "float"
+0(52) : warning C7011: implicit cast from "int" to "float"
+0(52) : warning C7011: implicit cast from "int" to "float"
+
+ENGINE_INFO [000001] Shader shaders/smooth/proj/ps.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/smooth/proj/ps.glsl : 
+ENGINE_INFO [000001] Shader shaders/smooth/proj/vs.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/smooth/proj/vs.glsl : 
+ENGINE_INFO [000001] Shader shaders/smooth/proj/gs.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/smooth/proj/gs.glsl : 
+ENGINE_INFO [000003] Shader shaders/smooth/smooth/pshader.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/smooth/smooth/pshader.glsl : 0(22) : warning C7533: global variable gl_TexCoord is deprecated after version 120
+0(55) : warning C7533: global variable gl_FragColor is deprecated after version 120
+
+ENGINE_INFO [000001] Shader shaders/smooth/final/ps.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/smooth/final/ps.glsl : 
+ENGINE_INFO [000001] Shader shaders/smooth/final/vs.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/smooth/final/vs.glsl : 
+ENGINE_INFO [000001] Shader shaders/smooth/final/gs.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/smooth/final/gs.glsl : 
+ENGINE_INFO [000002] Reset FBO
+ENGINE_INFO [000170] Starting login job
+ENGINE_INFO [000001] Log to analytics mytho, total deco
+ENGINE_INFO [000000] Checking user login (mytho)
+ENGINE_INFO [000000] End of login job
+ENGINE_INFO [000005] Reset FBO
+USER_INFO [000006] Login ok
+ENGINE_INFO [000001] Starting upload job
+ENGINE_INFO [000002] Uploading log file (mytho)
+ENGINE_INFO [000000] End of upload job
+ENGINE_INFO [000005] Getting leaderboard from server (mytho)
+ENGINE_INFO [000000] Getting mol list from disc
+ENGINE_INFO [004080] Activation of load state
+ENGINE_INFO [000000] Load state : removing molecules
+ENGINE_INFO [000001] Load state : loading first mol from import/1.mol2
+ENGINE_INFO [000001] Loading mol import/1.mol2
+ENGINE_INFO [000097] Making geometry
+ENGINE_INFO [000004] Marching cubes : allocating 0.314713Mo for 13750 cubes
+USER_INFO [000000] Making molecule geometry for SAS only
+USER_INFO [000000] Making SAS for 1700 atomes
+USER_INFO [000025] SAS ok
+ENGINE_INFO [000001] Loading thread ok
+ENGINE_INFO [000001] Load state : first mol loaded
+ENGINE_INFO [000000] Outputing geometry to opengl
+ENGINE_INFO [000081] Saved to obj file mol1.obj
+ENGINE_INFO [000001] Building trimesh shape from geometry
+ENGINE_INFO [000008] Building trimesh shape of 12048 vertices
+ENGINE_INFO [000092] Trimesh shape done
+ENGINE_INFO [000001] Adding molecule 10F87790 with body 00000000 to physic engine
+ENGINE_INFO [000005] Releasing cubes memory
+ENGINE_INFO [000001] Releasing cubes temp geometry
+ENGINE_INFO [000000] Release done
+ENGINE_INFO [000001] Load state : loading second mol from import/2.mol2
+ENGINE_INFO [000001] Loading mol import/2.mol2
+ENGINE_INFO [000091] Making geometry
+ENGINE_INFO [000002] Marching cubes : allocating 0.241699Mo for 10560 cubes
+USER_INFO [000001] Making molecule geometry for SAS only
+USER_INFO [000000] Making SAS for 1402 atomes
+USER_INFO [000033] SAS ok
+ENGINE_INFO [000001] Loading thread ok
+ENGINE_INFO [000003] Load state : second mol loaded
+ENGINE_INFO [000000] Outputing geometry to opengl
+ENGINE_INFO [000068] Saved to obj file mol2.obj
+ENGINE_INFO [000001] Building trimesh shape from geometry
+ENGINE_INFO [000006] Building trimesh shape of 9924 vertices
+ENGINE_INFO [000081] Trimesh shape done
+ENGINE_INFO [000000] Adding molecule 10F873F0 with body 00000000 to physic engine
+ENGINE_INFO [000005] Releasing cubes memory
+ENGINE_INFO [000000] Releasing cubes temp geometry
+ENGINE_INFO [000001] Release done
+ENGINE_INFO [000000] Molecules loaded ok
+ENGINE_INFO [000001] We lost 2168ko during molecules loading process
+ENGINE_INFO [000001] Tutorial : Activate at step -1
+ENGINE_INFO [000000] Getting scores from server (mytho)

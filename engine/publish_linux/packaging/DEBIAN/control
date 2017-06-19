@@ -1,0 +1,11 @@
+Package: udock
+Version: 1.9.0
+Depends: libsdl2-2.0-0, libglew1.10, libglewmx1.10, libfreetype6, libopenal1, libalut0
+Architecture: i386
+Maintainer: guillaume <guillaume.levieux@cnam.fr>
+Section: sciences
+Priority: optional
+Installed-Size: 20000
+Description: Interactive Docking Entertainment System
+  Udocks allows to perform molecular docking in and interactive, real time fashion.
+

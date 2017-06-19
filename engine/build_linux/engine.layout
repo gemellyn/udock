@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="../src/engine/utils/types_3d.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="29404" topLine="1250" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/gui/lstbox.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3541" topLine="149" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/render/text/FreeType.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2971" topLine="73" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/timer.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="981" topLine="35" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/utils/ny_utils.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="527" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/render/camera_animated.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="120" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/gui/edtbox.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2917" topLine="97" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/gui/screen_manager.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="871" topLine="29" />
+		</Cursor>
+	</File>
+	<File name="../src/external/bullet/src/BulletSoftBody/btSoftBody.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4872" topLine="125" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/gui/panel.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2636" topLine="90" />
+		</Cursor>
+	</File>
+	<File name="../src/external/bullet/src/BulletMultiThreaded/SpuFakeDma.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1892" topLine="23" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/gui/bouton.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2000" topLine="51" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/render/renderer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="227" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/external/bullet/src/BulletCollision/BroadphaseCollision/btAxisSweep3.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1100" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/render/text/text_engine.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2976" topLine="83" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/physics/physic_engine.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5535" topLine="180" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/gui/combox.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2300" topLine="88" />
+		</Cursor>
+	</File>
+	<File name="../src/external/bullet/src/BulletSoftBody/btSoftBodyInternals.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5267" topLine="138" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/sound/sound.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="173" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/main.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3094" topLine="127" />
+		</Cursor>
+	</File>
+	<File name="../src/external/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1440" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/sound/granular_sound.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2772" topLine="46" />
+		</Cursor>
+	</File>
+	<File name="../src/engine/render/graph/tex_manager.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1699" topLine="113" />
+		</Cursor>
+	</File>
+	<File name="../src/external/bullet/src/BulletSoftBody/btSoftBody.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6132" topLine="194" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

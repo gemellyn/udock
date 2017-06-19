@@ -1,0 +1,2 @@
+ENGINE_INFO [000000] LogFile added
+ENGINE_INFO [000000] LogScreen added

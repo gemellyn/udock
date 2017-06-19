@@ -1,0 +1,5 @@
+#include "windows.h"
+#include "ressource.h"
+
+IDI_PROJECTNAME	ICON	"udock.ico"
+IDI_SMALL	ICON	"udock_small.ico"
