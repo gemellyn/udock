@@ -24,6 +24,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 !**/src/**/[Dd]ebug/ 
+!**/src/**/x86/
 
 # Visual Studio 2015 cache/options directory
 .vs/
