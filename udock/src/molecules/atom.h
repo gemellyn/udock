@@ -37,6 +37,8 @@ class Atome : public Bucketable
 			NB_ATOM_UDOCK_ID
 		};
 
+		static unsigned int genUID;
+
 	public:
 		static std::string _TypesStr[NB_ATOM_UDOCK_ID]; //Pour faire le lien avec chaque atome et son type sybyl
 		static double _AtomsRadius[NB_ATOM_UDOCK_ID]; //Radius de chaque atome
@@ -48,6 +50,7 @@ class Atome : public Bucketable
 		char _Name[4];
 		char _Type[6];
 		char _SubstName[4];
+		const unsigned int UID;
 		int _UdockId;
 		int _SubstId;
 		float _Radius;
@@ -58,7 +61,7 @@ class Atome : public Bucketable
 		char _Flags; ///< N'importe quel flag sur l'atome
 
 	public :
-		Atome()
+		Atome() : UID(++genUID)
 		{
 			memset(_Name,0x00,4*sizeof(char));
 			memset(_Type,0x00,6*sizeof(char));
@@ -155,6 +158,11 @@ class Atome : public Bucketable
 			_Pos = mol2Atom->_Position;
 			_SubstId = mol2Atom->_SubstId;
 		}	
+
+		static void resetgenUID()
+		{
+			genUID = 0;
+		}
 
 	private :
 		
