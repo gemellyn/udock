@@ -1,135 +1,109 @@
-ENGINE_INFO [000001] LogFile added
+ENGINE_INFO [000000] LogFile added
 ENGINE_INFO [000000] LogScreen added
 ENGINE_INFO [000000] arg w asking window mode
 ENGINE_INFO [000000] arg l asking to show full log
-ENGINE_INFO [000001] arg a asking for admin ui
-ENGINE_INFO [000000] arg asking for no ship mode
-ENGINE_INFO [000386] SDL Init Ok
-ENGINE_INFO [000079] SDL Window Ok
-ENGINE_INFO [000008] SDL GL context Ok
-ENGINE_INFO [000004] GLEW init Ok
-ENGINE_INFO [000072] Reset FBO
-ENGINE_INFO [000011] Shader shaders/postprocess/pshader.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/postprocess/pshader.glsl : 
-ENGINE_INFO [000080] Reset FBO
-ENGINE_INFO [000009] OpenGL version 4.4.0 - Build 21.20.16.4627
-ENGINE_INFO [000006] Shader shaders/psmol.glsl compilation ok
-ENGINE_INFO [000002] Compile res shaders/psmol.glsl : 
+ENGINE_INFO [000000] arg a asking for admin ui
+ENGINE_INFO [000000] arg d asking for total disconected
+ENGINE_INFO [000061] SDL Init Ok
+ENGINE_INFO [001159] SDL Window Ok
+ENGINE_INFO [000014] SDL GL context Ok
+ENGINE_INFO [000006] GLEW init Ok
+ENGINE_INFO [000009] Reset FBO
+ENGINE_INFO [000087] Shader shaders/postprocess/pshader.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/postprocess/pshader.glsl : 0(67) : warning C7533: global variable gl_TexCoord is deprecated after version 120
+0(271) : warning C7533: global variable gl_FragColor is deprecated after version 120
+
+ENGINE_INFO [000001] Reset FBO
+ENGINE_INFO [000019] OpenGL version 4.5.0 NVIDIA 382.05
+ENGINE_INFO [000000] Shader shaders/psmol.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/psmol.glsl : 
 ENGINE_INFO [000001] Shader shaders/vsmol.glsl compilation ok
 ENGINE_INFO [000000] Compile res shaders/vsmol.glsl : 
-ENGINE_INFO [000016] Shader shaders/sphere/psmol.glsl compilation ok
+ENGINE_INFO [000001] Shader shaders/sphere/psmol.glsl compilation ok
 ENGINE_INFO [000001] Compile res shaders/sphere/psmol.glsl : 
 ENGINE_INFO [000001] Shader shaders/sphere/vsmol.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/sphere/vsmol.glsl : 
-ENGINE_INFO [000004] Shader shaders/sphere/gsmol.glsl compilation ok
-ENGINE_INFO [000003] Compile res shaders/sphere/gsmol.glsl : 
-ENGINE_INFO [000024] Shader shaders/sphere/sphere_mix/pshader.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/sphere/sphere_mix/pshader.glsl : WARNING: 0:2: '' :  #version directive missing
-WARNING: 0:33: 'assign' : implicit type conversion allowed from GLSL 1.20 
-WARNING: 0:34: 'assign' : implicit type conversion allowed from GLSL 1.20 
-WARNING: 0:36: 'assign' : implicit type conversion allowed from GLSL 1.20 
-WARNING: 0:37: 'assign' : implicit type conversion allowed from GLSL 1.20 
-WARNING: 0:41: 'assign' : implicit type conversion allowed from GLSL 1.20 
-WARNING: 0:42: 'assign' : implicit type conversion allowed from GLSL 1.20 
-WARNING: 0:44: 'assign' : implicit type conversion allowed from GLSL 1.20 
-WARNING: 0:45: 'assign' : implicit type conversion allowed from GLSL 1.20 
-WARNING: 0:52: 'assign' : implicit type conversion allowed from GLSL 1.20 
-WARNING: 0:52: 'assign' : implicit type conversion allowed from GLSL 1.20 
+ENGINE_INFO [000000] Compile res shaders/sphere/vsmol.glsl : 
+ENGINE_INFO [000001] Shader shaders/sphere/gsmol.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/sphere/gsmol.glsl : 
+ENGINE_INFO [000001] Shader shaders/sphere/sphere_mix/pshader.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/sphere/sphere_mix/pshader.glsl : 0(33) : warning C7011: implicit cast from "int" to "float"
+0(34) : warning C7011: implicit cast from "int" to "float"
+0(36) : warning C7011: implicit cast from "int" to "float"
+0(37) : warning C7011: implicit cast from "int" to "float"
+0(41) : warning C7011: implicit cast from "int" to "float"
+0(42) : warning C7011: implicit cast from "int" to "float"
+0(44) : warning C7011: implicit cast from "int" to "float"
+0(45) : warning C7011: implicit cast from "int" to "float"
+0(52) : warning C7011: implicit cast from "int" to "float"
+0(52) : warning C7011: implicit cast from "int" to "float"
 
-
-ENGINE_INFO [000008] Shader shaders/smooth/proj/ps.glsl compilation ok
-ENGINE_INFO [000005] Compile res shaders/smooth/proj/ps.glsl : 
+ENGINE_INFO [000001] Shader shaders/smooth/proj/ps.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/smooth/proj/ps.glsl : 
 ENGINE_INFO [000001] Shader shaders/smooth/proj/vs.glsl compilation ok
-ENGINE_INFO [000002] Compile res shaders/smooth/proj/vs.glsl : 
+ENGINE_INFO [000000] Compile res shaders/smooth/proj/vs.glsl : 
 ENGINE_INFO [000001] Shader shaders/smooth/proj/gs.glsl compilation ok
 ENGINE_INFO [000000] Compile res shaders/smooth/proj/gs.glsl : 
-ENGINE_INFO [000022] Shader shaders/smooth/smooth/pshader.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/smooth/smooth/pshader.glsl : 
-ENGINE_INFO [000010] Shader shaders/smooth/final/ps.glsl compilation ok
-ENGINE_INFO [000002] Compile res shaders/smooth/final/ps.glsl : 
-ENGINE_INFO [000001] Shader shaders/smooth/final/vs.glsl compilation ok
-ENGINE_INFO [000000] Compile res shaders/smooth/final/vs.glsl : 
+ENGINE_INFO [000001] Shader shaders/smooth/smooth/pshader.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/smooth/smooth/pshader.glsl : 0(22) : warning C7533: global variable gl_TexCoord is deprecated after version 120
+0(55) : warning C7533: global variable gl_FragColor is deprecated after version 120
+
+ENGINE_INFO [000000] Shader shaders/smooth/final/ps.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/smooth/final/ps.glsl : 
+ENGINE_INFO [000000] Shader shaders/smooth/final/vs.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/smooth/final/vs.glsl : 
 ENGINE_INFO [000001] Shader shaders/smooth/final/gs.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/smooth/final/gs.glsl : 
-ENGINE_INFO [000033] Reset FBO
-ENGINE_INFO [000288] Getting best player message
-ENGINE_INFO [000267] Server response : 
-Best player is [benboyer] with 5 High Score(s) !
-ENGINE_INFO [000009] Reset FBO
-ENGINE_INFO [009022] Starting login job
-ENGINE_INFO [000020] Log to analytics
-ENGINE_INFO [002102] Server response : GIF89a
-ENGINE_INFO [000001] Checking user login
-ENGINE_INFO [000190] Server response : 1
-ENGINE_INFO [000001] User id : 1
-ENGINE_INFO [000039] End of login job
-USER_INFO [000035] Login ok
-ENGINE_INFO [000034] Starting upload job
-ENGINE_INFO [000002] Uploading log file
-ENGINE_ERROR [000105] Failed to contact url : Empty reply from server
-ENGINE_INFO [000055] End of upload job
-ENGINE_INFO [000035] Getting leaderboard from server
-ENGINE_INFO [000144] Server response : 0|#1 (5) benboyer|#1 (5) tonets|#1 (5) bpelmoine|#2 (4) antho|#2 (4) CharlyGBA|#2 (4) gremlinh|#3 (3) TomTheStagiaire|#4 (2) Maud|#5 (1) Maou|#5 (1) Ichijou|#5 (1) Vincent|#5 (1) sigrid|#5 (1) Mc|#5 (1) Steph1883|#5 (1) zkurkcuoglu|#5 (1) Milan|#5 (1) lucas
-ENGINE_INFO [000001] Getting mol list from server
-ENGINE_INFO [000140] Server response : 1|barnase (147)|2|barstar (114)|4|fasciculin II (115)|5|cdc42 gtpase (77)|3|acetylcholinesterase (135)|6|cdc42 gap (89)|7|thermitase (88)|8|eglin C (80)|9|tuto1-1 (12)|10|tuto1-2 (12)|11|tuto2-1 (12)|12|tuto2-2 (11)|13|barnase (11)|14|barstar (11)|
-ENGINE_INFO [004450] Activation of load state
-ENGINE_INFO [000001] Load state : removing molecules
-ENGINE_INFO [000048] Load state : loading first mol from molecules/1.mol2
-ENGINE_INFO [000007] Loading mol molecules/1.mol2
-ENGINE_INFO [000104] Making geometry
-ENGINE_INFO [000034] Marching cubes : allocating 11.0602Mo for 483226 cubes
-USER_INFO [000000] Making molecule geometry for SES
-USER_INFO [000090] Making SAS for 1700 atomes
-ENGINE_INFO [000115] Cubes ok
-USER_INFO [000055] Contracting SAS to SES
-ENGINE_INFO [000080] End of surface contration threads
-ENGINE_INFO [000044] Contraction done in 0.0944925 ms
-USER_INFO [000001] Making van des Walls part for 1700 atomes
-USER_INFO [000057] Van der Walls done
-USER_INFO [000026] Calculating Electrostatics
-USER_INFO [000114] Electrostatics done
-ENGINE_INFO [000001] Loading thread ok
-ENGINE_INFO [000032] Load state : first mol loaded
-ENGINE_INFO [000037] Outputing geometry to opengl
-ENGINE_INFO [000001] Lissage des normales
-ENGINE_INFO [000271] Saved to obj file mol1.obj
-ENGINE_INFO [000000] Building trimesh shape from geometry
-ENGINE_INFO [000009] Building trimesh shape of 122400 vertices
-ENGINE_INFO [000022] Trimesh shape done
-ENGINE_INFO [000001] Adding molecule 09947F08 with body 00000000 to physic engine
-ENGINE_INFO [000004] Releasing cubes memory
-ENGINE_INFO [000012] Releasing cubes temp geometry
-ENGINE_INFO [000000] Release done
-ENGINE_INFO [000004] Load state : loading second mol from molecules/2.mol2
-ENGINE_INFO [000002] Loading mol molecules/2.mol2
-ENGINE_INFO [000047] Making geometry
-ENGINE_INFO [000033] Marching cubes : allocating 8.50177Mo for 371448 cubes
-USER_INFO [000000] Making molecule geometry for SES
-USER_INFO [000070] Making SAS for 1402 atomes
-ENGINE_INFO [000097] Cubes ok
-USER_INFO [000000] Contracting SAS to SES
-ENGINE_INFO [000074] End of surface contration threads
-ENGINE_INFO [000017] Contraction done in 0.0885018 ms
-USER_INFO [000034] Making van des Walls part for 1402 atomes
-USER_INFO [000048] Van der Walls done
-USER_INFO [000054] Calculating Electrostatics
-USER_INFO [000094] Electrostatics done
-ENGINE_INFO [000086] Loading thread ok
-ENGINE_INFO [000033] Load state : second mol loaded
-ENGINE_INFO [000028] Outputing geometry to opengl
-ENGINE_INFO [000005] Lissage des normales
-ENGINE_INFO [000230] Saved to obj file mol2.obj
+ENGINE_INFO [000000] Compile res shaders/smooth/final/gs.glsl : 
+ENGINE_INFO [000001] Reset FBO
+ENGINE_INFO [000189] Starting login job
+ENGINE_INFO [000001] Log to analytics mytho, total deco
+ENGINE_INFO [000000] Checking user login (mytho)
+ENGINE_INFO [000002] Reset FBO
+ENGINE_INFO [000001] End of login job
+USER_INFO [000021] Login ok
+ENGINE_INFO [000003] Starting upload job
+ENGINE_INFO [000001] Uploading log file (mytho)
+ENGINE_INFO [000000] End of upload job
+ENGINE_INFO [000047] Getting leaderboard from server (mytho)
+ENGINE_INFO [000001] Getting mol list from disc
+ENGINE_INFO [005735] Activation of load state
+ENGINE_INFO [000000] Load state : removing molecules
+ENGINE_INFO [000000] Load state : loading first mol from import/1.mol2
+ENGINE_INFO [000001] Loading mol import/1.mol2
+ENGINE_INFO [000153] Making geometry
+ENGINE_INFO [000004] Marching cubes : allocating 0.314713Mo for 13750 cubes
+USER_INFO [000000] Making molecule geometry for SAS only
+USER_INFO [000000] Making SAS for 1700 atomes
+USER_INFO [000029] SAS ok
+ENGINE_INFO [000000] Loading thread ok
+ENGINE_INFO [000013] Load state : first mol loaded
+ENGINE_INFO [000001] Outputing geometry to opengl
+ENGINE_INFO [000091] Saved to obj file mol1.obj
 ENGINE_INFO [000001] Building trimesh shape from geometry
-ENGINE_INFO [000006] Building trimesh shape of 99108 vertices
-ENGINE_INFO [000018] Trimesh shape done
-ENGINE_INFO [000000] Adding molecule 09948928 with body 00000000 to physic engine
+ENGINE_INFO [000009] Building trimesh shape of 12048 vertices
+ENGINE_INFO [000113] Trimesh shape done
+ENGINE_INFO [000001] Adding molecule 056CED50 with body 00000000 to physic engine
 ENGINE_INFO [000005] Releasing cubes memory
-ENGINE_INFO [000008] Releasing cubes temp geometry
-ENGINE_INFO [000001] Release done
-ENGINE_INFO [000001] Molecules loaded ok
-ENGINE_INFO [000000] We lost 16328ko during molecules loading process
-ENGINE_INFO [000005] Tutorial : Activate at step -1
-ENGINE_INFO [000008] Getting scores from server
-ENGINE_INFO [000152] Server response : -90.8839|samba|-20.3294|mika123|-21.4629|lucas|-21.8494|TV45|-22.313|amstewart|-23.8871|bjoern|-29.3212|Felix|-30.1523|Amelie|-30.1967|john|-30.5935|koko|-32.6864|sigrid1402|-33.2748|BenjaminBonhomme|-33.3294|arlquin|-35.0843|sfiorucci|-37.0987|donald willis|-37.3156|Mathilde de Torsiac|-37.5789|Terrari|-37.6371|Maud|-39.9572|gwolber|-40.8006|asayyeda|-42.0183|pegaz|-42.6142|DanyMorice|-43.3057|Mc|-43.3796|Laurent34|-44.9528|zduzgun|-45.5756|kaouther|-47.0381|sigrid|-48.5394|zkurkcuoglu|-48.7399|gggtta|-51.648|Dda|-51.6618|NathCNAM|-51.8174|benboyer|-54.0481|Shuainan Zhang|-55.051|CharlyGBA|-57.7665|martajulia|-58.25|gremlinh|-58.4834|joaor|-58.9057|pschmidtke|-60.4809|luckav|-60.5863|odelalan|-60.8558|jderuyck|-61.3847|fes2015|-62.4572|varms|-63.7743|mindsound|-64.5109|raphtown|-65.3159|lsm35|-65.7641|fes|-69.2641|levittlab|-70.5604|Ichijou|-72.1712|ralphy|-73.5082|NaK|-76.7506|mancino|-78.7002|guigui|-83.7818|max|-99.6217|maitrezu|-105.066|tonets|-111.36
-ENGINE_INFO [000001] 113 strings in response
-USER_INFO [000005] My score : -90.8839
+ENGINE_INFO [000000] Releasing cubes temp geometry
+ENGINE_INFO [000000] Release done
+ENGINE_INFO [001989] Load state : loading second mol from import/2.mol2
+ENGINE_INFO [000001] Loading mol import/2.mol2
+ENGINE_INFO [000129] Making geometry
+ENGINE_INFO [000003] Marching cubes : allocating 0.241699Mo for 10560 cubes
+USER_INFO [000000] Making molecule geometry for SAS only
+USER_INFO [000000] Making SAS for 1402 atomes
+USER_INFO [000022] SAS ok
+ENGINE_INFO [000000] Loading thread ok
+ENGINE_INFO [000002] Load state : second mol loaded
+ENGINE_INFO [000001] Outputing geometry to opengl
+ENGINE_INFO [000085] Saved to obj file mol2.obj
+ENGINE_INFO [000000] Building trimesh shape from geometry
+ENGINE_INFO [000007] Building trimesh shape of 9924 vertices
+ENGINE_INFO [000075] Trimesh shape done
+ENGINE_INFO [000001] Adding molecule 059C34E0 with body 00000000 to physic engine
+ENGINE_INFO [000004] Releasing cubes memory
+ENGINE_INFO [000000] Releasing cubes temp geometry
+ENGINE_INFO [000000] Release done
+ENGINE_INFO [001372] Molecules loaded ok
+ENGINE_INFO [000000] We lost 5400ko during molecules loading process
+ENGINE_INFO [000001] Tutorial : Activate at step -1
+ENGINE_INFO [000003] Getting scores from server (mytho)

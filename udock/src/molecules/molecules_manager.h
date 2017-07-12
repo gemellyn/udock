@@ -368,6 +368,7 @@ class MoleculesManager
 				updateEnergyScoreForAtome(&AtomesTransformesMol1[i], energy);
 			}
 
+			//Mise a jour du score pour la molécule
 			applyScoreChanges((MoleculeCubes*)mol1, energy);
 
 			if(pEnergyContact)
@@ -426,7 +427,7 @@ class MoleculesManager
 			{
 				std::pair<float, std::vector<size_t>>* entry = nullptr;
 				try {
-					entry = &atomeMap->at(atome->UID);
+					entry = & (atomeMap->at(atome->UID));
 				}
 				catch (const std::out_of_range& oor) {
 					std::cerr << "Out of Range error: " << oor.what() << " UID : " << atome->UID << '\n';

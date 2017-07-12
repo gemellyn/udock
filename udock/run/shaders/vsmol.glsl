@@ -16,6 +16,7 @@ uniform vec3 lightpos;
 layout (location=0) in vec4 vs_color_in;
 layout (location=1) in vec3 vs_normal_in;
 layout (location=2) in vec3 vs_position_in;
+layout (location=3) in float vs_nrgy_in;
 
 out vec3 vs_normal_out;
 out vec4 vs_color_out;

@@ -1838,8 +1838,8 @@ int main(int argc, char* argv[])
 		{
 			Log::log(Log::ENGINE_INFO, "arg d asking for public disconect");
 			public_disco = true;
-					Log::log(Log::ENGINE_INFO, "arg d asking for total disconected");
-					total_disco = true;
+			Log::log(Log::ENGINE_INFO, "arg d asking for total disconected");
+			total_disco = true;
 		
 		}
 

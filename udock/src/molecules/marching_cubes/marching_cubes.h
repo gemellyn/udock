@@ -1738,11 +1738,13 @@ public:
 		if (_MolVert != nullptr)
 			SAFEDELETE_TAB(_MolVert);
 		_MolVert = new float[SIZE_VERTICES * VBO_VerticesCount];
+
 		if (_MolVert == nullptr)
 		{
 			Log::log(Log::ENGINE_ERROR, "Memory allocation failed for _MolVert of MarchingCubes");
 			return;
 		}
+
 		//MolNorm
 		if (_MolNorm != nullptr)
 			SAFEDELETE_TAB(_MolNorm);
@@ -1752,6 +1754,7 @@ public:
 			Log::log(Log::ENGINE_ERROR, "Memory allocation failed for _MolNorm of MarchingCubes");
 			return;
 		}
+
 		//MolPola
 		if (_MolPola != nullptr)
 			SAFEDELETE_TAB(_MolPola);
@@ -1761,6 +1764,7 @@ public:
 			Log::log(Log::ENGINE_ERROR, "Memory allocation failed for _MolPola of MarchingCubes");
 			return;
 		}
+
 		//MolNrgy
 		if (_MolNrgy != nullptr)
 			SAFEDELETE_TAB(_MolNrgy);
@@ -1904,6 +1908,20 @@ public:
 			}
 		}
 
+		//On vérifie si on a bien ajouté tous les data
+		int delta = ptrVert - (_MolVert +(VBO_VerticesCount * SIZE_VERTICES));
+		if (delta != 0)
+			Log::log(Log::ENGINE_ERROR, (std::string("Il manque ") + toString(delta) + " floats dans _MolVert").c_str());
+		delta = ptrNorm - (_MolNorm + (VBO_VerticesCount * SIZE_NORMALS));
+		if (delta != 0)
+			Log::log(Log::ENGINE_ERROR, (std::string("Il manque ") + toString(delta) + " floats dans _MolNorm").c_str());
+		delta = ptrPola - (_MolPola + (VBO_VerticesCount * SIZE_POLARITY));
+		if (delta != 0)
+			Log::log(Log::ENGINE_ERROR, (std::string("Il manque ") + toString(delta) + " floats dans _MolPola").c_str());
+		delta = ptrNrgy - (_MolNrgy + (VBO_VerticesCount * SIZE_ENERGY));
+		if (delta != 0)
+			Log::log(Log::ENGINE_ERROR, (std::string("Il manque ") + toString(delta) + " floats dans _MolNrgy").c_str());
+
 
 		//On cree le VAO
 
@@ -1947,31 +1965,31 @@ public:
 
 		glBufferSubData(GL_ARRAY_BUFFER,
 			0,
-			VBO_VerticesCount * SIZE_VERTICES,
+			VBO_VerticesCount * SIZE_VERTICES * sizeof(float),
 			_MolVert);
 
 		NYRenderer::checkGlError("Failed when setting values of vertices in VBO");
 
 		glBufferSubData(GL_ARRAY_BUFFER,
-			VBO_VerticesCount * SIZE_VERTICES,
-			VBO_VerticesCount * SIZE_NORMALS,
+			VBO_VerticesCount * SIZE_VERTICES * sizeof(float),
+			VBO_VerticesCount * SIZE_NORMALS * sizeof(float),
 			_MolNorm);
 
 		NYRenderer::checkGlError("Failed when setting values of normals in VBO");
 
 		glBufferSubData(GL_ARRAY_BUFFER,
-			VBO_VerticesCount * SIZE_VERTICES +
-			VBO_VerticesCount * SIZE_NORMALS,
-			VBO_VerticesCount * SIZE_POLARITY,
+			(VBO_VerticesCount * SIZE_VERTICES +
+			VBO_VerticesCount * SIZE_NORMALS)* sizeof(float),
+			VBO_VerticesCount * SIZE_POLARITY * sizeof(float),
 			_MolPola);
 
 		NYRenderer::checkGlError("Failed when setting values of polarity in VBO");
 
 		glBufferSubData(GL_ARRAY_BUFFER,
-			VBO_VerticesCount * SIZE_VERTICES +
+			(VBO_VerticesCount * SIZE_VERTICES +
 			VBO_VerticesCount * SIZE_NORMALS +
-			VBO_VerticesCount * SIZE_POLARITY,
-			VBO_VerticesCount * SIZE_ENERGY,
+			VBO_VerticesCount * SIZE_POLARITY)* sizeof(float),
+			VBO_VerticesCount * SIZE_ENERGY* sizeof(float),
 			_MolNrgy);
 
 		NYRenderer::checkGlError("Failed when setting values of energy in VBO");
@@ -2284,11 +2302,11 @@ public:
 		//position
 		glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0));
 		//normals
-		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(VBO_VerticesCount * SIZE_VERTICES));
+		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(VBO_VerticesCount * SIZE_VERTICES * sizeof(float)));
 		//color
-		glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(VBO_VerticesCount * SIZE_VERTICES + VBO_VerticesCount * SIZE_NORMALS));
+		glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET((VBO_VerticesCount * SIZE_VERTICES + VBO_VerticesCount * SIZE_NORMALS)* sizeof(float)));
 		//score
-		glVertexAttribPointer(3, 1, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(VBO_VerticesCount * SIZE_VERTICES + VBO_VerticesCount * SIZE_NORMALS + VBO_VerticesCount * SIZE_POLARITY));
+		glVertexAttribPointer(3, 1, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET((VBO_VerticesCount * SIZE_VERTICES + VBO_VerticesCount * SIZE_NORMALS + VBO_VerticesCount * SIZE_POLARITY)* sizeof(float)));
 
 		// /!\ stride = _vertexVAOfloatCount * sizeof(float) //old version
 
