@@ -1,6 +1,8 @@
 #include "molecule.h"
 #include "global.h"
 
+unsigned int Molecule::genUID = 0;
+
 /**
   * Chargement de la molecule a partir d'un MOL2
   */

@@ -74,13 +74,17 @@ class Molecule
 	    std::string _ChargeType;
 		std::wstring _Path; ///< fichier source de la molécule
 
+		const unsigned int UID;
+
 	private :
 		bool _MaxDimDone; ///Si on a deja calculé la dimension max de la molécule
 		float _MaxDim; ///La dimension max de la molécule
 
+		static unsigned int genUID;
+
 	public :
 
-		Molecule()
+		Molecule(): UID(++genUID)
 		{
 			_Atomes = NULL;
 			_NbAtomes = 0;

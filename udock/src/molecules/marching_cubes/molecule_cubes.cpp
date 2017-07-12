@@ -188,7 +188,8 @@ void MoleculeCubes::threadElectrostatics(PARAMS_THREAD_ELECTROSTATICS * params)
 void MoleculeCubes::addToOpengl(void)
 {
 	Log::log(Log::ENGINE_INFO,"Outputing geometry to opengl");
-	_MCubes->makeGeometryFaces(NYVert3Df()-_Barycenter);
+	//_MCubes->makeGeometryFaces(NYVert3Df()-_Barycenter);
+	_MCubes->makeGeometryFacesDataOriented(NYVert3Df() - _Barycenter);
 }
 
 /**
@@ -448,4 +449,39 @@ void MoleculeCubes::calcSurfaceByAtom(bool normalize = false)
 
 
 	Log::log(Log::ENGINE_INFO,"Calcul de surface ok");
+}
+
+std::vector<size_t> MoleculeCubes::getAssociatedVertices(const Atome& atom)
+{
+	float* ptrDataVert = (_MCubes->_MolVert); //ptr to vertices positions array
+	const auto offsetEnergy = _MCubes->SIZE_ENERGY; // number of float for stocking energy
+	const auto offsetVertices = _MCubes->SIZE_VERTICES; // number of float for a vertex
+	const unsigned int nbVertices = _MCubes->VBO_VerticesCount; // number of vertices in VBO
+
+	std::vector<size_t> vertices; //vertices to be returned
+
+	const float radius = atom._Radius * 1.25f;
+	const float radiusSqr = radius * radius;
+	NYVert3Df atom_pos_t, pos_t, vecToVec; //temp var for pos of vertex and magnitude
+	atom_pos_t = atom._Pos;
+	float distance_t;
+	for (size_t i = 0; i < nbVertices; i++)
+	{
+		//retrieve pos
+		pos_t.X = *(ptrDataVert);
+		pos_t.Y = *(ptrDataVert + 1);
+		pos_t.Z = *(ptrDataVert + 2);
+		//get vec to vec vector
+		vecToVec = atom_pos_t - pos_t;
+		distance_t = vecToVec.getMagnitude(); // actually sqrmagnitude ??
+		//do stuff
+		if (distance_t <= radiusSqr)
+		{
+			vertices.push_back( i*offsetEnergy); // offset to energy data added to the vector
+		}
+		//go to nextdata
+		ptrDataVert += offsetVertices;
+	}
+
+	return vertices;
 }

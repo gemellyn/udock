@@ -2,13 +2,18 @@
 #define __MOLECULES_MANAGER__
 
 #include "molecule.h"
+#include "molecules/marching_cubes/molecule_cubes.h"
 #include "engine/hasher_3d.h"
 #include <vector>
+#include <utility> 
+#include <algorithm>
+#include <unordered_map>
 #include <boost/thread.hpp>
 
 #define CUTOFF_DISTANCE 16.0f //Taille des cubes du hasher 3D
 
-
+typedef std::unordered_map<unsigned int, std::pair<float ,std::vector<size_t>>> AtomeHashmap;
+//uid : pair --> energy, vertex offset
 
 class MoleculesManager
 {
@@ -19,6 +24,9 @@ class MoleculesManager
 		Atome * AtomesTransformesMol2;
 		Hasher3D * _Hasher;
 		Molecule * _MoleculesEvaluees[2];
+
+		AtomeHashmap* atomeMap;
+		unsigned int atomeCount;
 
 	public :
 		std::vector<Molecule*> _Molecules;
@@ -53,10 +61,14 @@ class MoleculesManager
 			_Hasher =  new Hasher3D();
 			_MoleculesEvaluees[0] = NULL;
 			_MoleculesEvaluees[1] = NULL;
+			atomeMap = nullptr;
 		}
 
 		void setMoleculeEvaluees(Molecule * mol1, Molecule * mol2)
 		{
+			atomeCount = mol1->_NbAtomes + mol2->_NbAtomes;
+			atomeMap = new AtomeHashmap(atomeCount);
+
 			_MoleculesEvaluees[0] = mol1;
 			_MoleculesEvaluees[1] = mol2;
 		}
@@ -142,12 +154,24 @@ class MoleculesManager
 				AtomesTransformesMol1 = new Atome[_NbAtomesMaxBuffer];
 				AtomesTransformesMol2 = new Atome[_NbAtomesMaxBuffer];
 			}
+
+			initializeMolScore((MoleculeCubes*)mol);
 		}
 
 		void deleteMolecules(NYPhysicEngine * engine)
 		{
+			if (atomeMap != nullptr)
+			{
+				for (auto it = atomeMap->begin(); it != atomeMap->end(); ++it)
+					it->second.second.clear();
+				atomeMap->clear();
+				SAFEDELETE(atomeMap);
+			}
+			//reset UID for atomeMap
+			Atome::resetgenUID();
+
 			removeMolsFromPhysicEngine(engine);
-			for(unsigned int i=0;i<_Molecules.size();i++)
+			for (unsigned int i = 0; i < _Molecules.size(); i++)
 				SAFEDELETE(_Molecules[i]);
 			_Molecules.clear();
 			SAFEDELETE_TAB(AtomesTransformesMol1);
@@ -340,7 +364,11 @@ class MoleculesManager
 							(*nbCouplesCalc)++;
 					}
 				}
+				//update score pour un atome;
+				updateEnergyScoreForAtome(&AtomesTransformesMol1[i], energy);
 			}
+
+			applyScoreChanges((MoleculeCubes*)mol1, energy);
 
 			if(pEnergyContact)
 				*pEnergyContact = energyContact;
@@ -391,7 +419,65 @@ class MoleculesManager
 				_Molecules[i]->_Visible = !hide;
 		}
 
+		//update the score of the associated vertices of a atom
+		void updateEnergyScoreForAtome(Atome* atome, const float& energy)
+		{
+			if (atome)
+			{
+				std::pair<float, std::vector<size_t>>* entry = nullptr;
+				try {
+					entry = &atomeMap->at(atome->UID);
+				}
+				catch (const std::out_of_range& oor) {
+					std::cerr << "Out of Range error: " << oor.what() << " UID : " << atome->UID << '\n';
+					return;
+				}
+				//update score (will be proportionated on apply)
+				if(!entry->second.empty())
+					entry->first = energy;
+			}
+		}
 
+		void applyScoreChanges(MoleculeCubes* mol, const float& energyTotale)
+		{
+			AtomeHashmap::iterator it = atomeMap->begin();
+			while (it != atomeMap->end())
+			{
+				//update score to have proportion based energy score
+				it->second.first /= energyTotale;
+				//fill the score for all vertex associated with current atome
+				std::fill(it->second.second.begin(), it->second.second.end(), it->second.first);
+				++it;
+			}
+			//opengl buffer update (1call)
+		}
+
+		//initialize the hashmap for a given molecule
+		void initializeMolScore(MoleculeCubes* mol)
+		{
+			if (atomeMap == nullptr)
+				atomeMap = new AtomeHashmap();
+
+			size_t count = mol->_NbAtomes;
+			atomeMap->reserve((size_t)(count + atomeMap->size()));
+
+			for (size_t i = 0; i < count; i++)
+			{
+				Atome* atom = nullptr;
+				atom = (mol->_Atomes + i);
+				if (atom)
+				{
+					//ajoute l'atome à la hashmap
+					atomeMap->emplace(
+						atom->UID,
+						std::pair<float, std::vector<size_t>>(
+							0.0f,
+							mol->getAssociatedVertices(*(atom))
+							)
+					);
+				}
+			}
+		}
 };
 
 #endif

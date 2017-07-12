@@ -100,6 +100,11 @@ class MoleculeCubes : public Molecule
 		  */
 		void calcSurfaceByAtom(bool normalize);
 
+		/**
+		* Permet de récupérer un tableau de vertex associé à un atome
+		*/
+		std::vector<size_t> getAssociatedVertices(const Atome& atom);
+
     private:
 
         int _NbThreads;

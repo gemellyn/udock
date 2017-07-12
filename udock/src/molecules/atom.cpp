@@ -5,3 +5,4 @@ std::string Atome::_TypesStr[NB_ATOM_UDOCK_ID]; //Pour faire le lien avec chaque
 double Atome::_AtomsRadius[NB_ATOM_UDOCK_ID]; //Radius de chaque atome
 double Atome::_AtomsEpsilons[NB_ATOM_UDOCK_ID]; //Voir cornell 1995
 double Atome::_AtomsEpsilonsSquared[NB_ATOM_UDOCK_ID][NB_ATOM_UDOCK_ID]; //Voir cornell 1995, pour le calcul de Aij Bij
+unsigned int Atome::genUID = 0;
