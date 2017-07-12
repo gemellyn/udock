@@ -472,7 +472,7 @@ std::vector<size_t> MoleculeCubes::getAssociatedVertices(const Atome& atom)
 		pos_t.Y = *(ptrDataVert + 1);
 		pos_t.Z = *(ptrDataVert + 2);
 		//get vec to vec vector
-		vecToVec = atom_pos_t - pos_t;
+		vecToVec = atom_pos_t - (_Barycenter - pos_t);
 		distance_t = vecToVec.getMagnitude(); // actually sqrmagnitude ??
 		//do stuff
 		if (distance_t <= radiusSqr)

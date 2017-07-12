@@ -251,6 +251,7 @@ class MoleculesManager
 				AtomesTransformesMol1[i]._Radius = mol1->_Atomes[i]._Radius;
 				AtomesTransformesMol1[i]._Charge = mol1->_Atomes[i]._Charge;
 				AtomesTransformesMol1[i]._UdockId = mol1->_Atomes[i]._UdockId;
+				AtomesTransformesMol1[i].UID = mol1->_Atomes[i].UID;
 			}
 
 			if(calcMol2Pos)
@@ -274,6 +275,7 @@ class MoleculesManager
 					AtomesTransformesMol2[i]._Radius = mol2->_Atomes[i]._Radius;
 					AtomesTransformesMol2[i]._Charge = mol2->_Atomes[i]._Charge;
 					AtomesTransformesMol2[i]._UdockId = mol2->_Atomes[i]._UdockId;
+					AtomesTransformesMol2[i].UID = mol2->_Atomes[i].UID;
 
 					if(pos.X < minX)
 						minX = pos.X;
@@ -309,6 +311,7 @@ class MoleculesManager
 			double charge1 = 0;
 			int udockId1 = 0;
 			NYVert3Df pos1,pos2;
+			unsigned int UID = 0;
 
 			double r;
 			double rmSurR;
@@ -324,6 +327,7 @@ class MoleculesManager
 				radius1 = AtomesTransformesMol1[i]._Radius;
 				charge1 = AtomesTransformesMol1[i]._Charge;
 				udockId1 = AtomesTransformesMol1[i]._UdockId;
+				UID = AtomesTransformesMol1[i].UID;
 
 				_Hasher->getBucketContentWithNeighbours(pos1,&request);
 
@@ -365,7 +369,7 @@ class MoleculesManager
 					}
 				}
 				//update score pour un atome;
-				updateEnergyScoreForAtome(&AtomesTransformesMol1[i], energy);
+				updateEnergyScoreForAtome(UID, energy);
 			}
 
 			//Mise a jour du score pour la molécule
@@ -421,22 +425,19 @@ class MoleculesManager
 		}
 
 		//update the score of the associated vertices of a atom
-		void updateEnergyScoreForAtome(Atome* atome, const float& energy)
+		void updateEnergyScoreForAtome(const unsigned int& UID, const float& energy)
 		{
-			if (atome)
-			{
-				std::pair<float, std::vector<size_t>>* entry = nullptr;
-				try {
-					entry = & (atomeMap->at(atome->UID));
-				}
-				catch (const std::out_of_range& oor) {
-					std::cerr << "Out of Range error: " << oor.what() << " UID : " << atome->UID << '\n';
-					return;
-				}
-				//update score (will be proportionated on apply)
-				if(!entry->second.empty())
-					entry->first = energy;
+			std::pair<float, std::vector<size_t>>* entry = nullptr;
+			try {
+				entry = & (atomeMap->at(UID));
 			}
+			catch (const std::out_of_range& oor) {
+				std::cerr << "Out of Range error: " << oor.what() << " UID : " << UID << '\n';
+				return;
+			}
+			//update score (will be proportionated on apply)
+			if(!entry->second.empty())
+				entry->first = energy;
 		}
 
 		void applyScoreChanges(MoleculeCubes* mol, const float& energyTotale)

@@ -50,7 +50,7 @@ class Atome : public Bucketable
 		char _Name[4];
 		char _Type[6];
 		char _SubstName[4];
-		const unsigned int UID;
+		unsigned int UID;
 		int _UdockId;
 		int _SubstId;
 		float _Radius;
