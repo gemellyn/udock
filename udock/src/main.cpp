@@ -1,4 +1,7 @@
 //Includes ENGINE
+
+#include "engine/network/osc.h"
+
 #include "engine/log/log_console.h"
 #include "engine/log/log_file.h"
 #include "engine/timer.h"
@@ -19,6 +22,8 @@
 #include "engine/gui/edtbox.h"
 #include "engine/gui/loading.h"
 
+
+
 //Includes UDOCK
 #include "log/log_screen.h"
 #include "log/log_actions_reader.h"
@@ -29,6 +34,7 @@
 
 #include "network/http_manager_total_deco.h"
 #include "network/http_manager_public_deco.h"
+
 
 #include "game_states/mol_state.h"
 #include "game_states/ship_state.h"

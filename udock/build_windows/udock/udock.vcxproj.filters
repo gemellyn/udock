@@ -1018,6 +1018,9 @@
     <ClInclude Include="..\..\src\game_states\ship_state.h">
       <Filter>src\game_state</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\engine\src\engine\network\osc.h">
+      <Filter>engine\network</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\tutorial\tutorial.cpp">

@@ -143,9 +143,9 @@ class NYFbo
 				return;
 
 			//remove la composante alpha
-			for (int x = 0; x < min(image.width,_Width); x++)
+			for (int x = 0; x < min((int)image.width,_Width); x++)
 			{
-				for (int y = 0; y < min(image.height,_Height); y++)
+				for (int y = 0; y < min((int)image.height,_Height); y++)
 				{
 					int pix1 = (x + y*_Width);
 					int pix2 = (x + (image.height-y-1)*image.width);

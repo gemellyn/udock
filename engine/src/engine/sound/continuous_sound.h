@@ -309,7 +309,7 @@ private :
 				}
 				
 				_PowerMax -= elapsed * 0.01;
-				_PowerMax = max(_PowerMax,0);
+				_PowerMax = max(_PowerMax,0.0f);
 				_PowerMax = min(_PowerMax,1.0f);
 
 				if(_GainFinal < 0)

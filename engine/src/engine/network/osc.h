@@ -13,19 +13,19 @@ class Osc
 	private:
 		udp::socket _Socket;
 		udp::endpoint _SenderEndpoint;
-		boost::asio::_IoService _IoService;
+		boost::asio::io_service _IoService;
 
 		int _ComPort = 8001;
 		enum { max_length = 1024 };
 		char data_[max_length];
 
 public:
-	Osc(boost::asio::_IoService& _IoService, short port)
+	Osc(boost::asio::io_service & _IoService, short port)
 		: _Socket(_IoService, udp::endpoint(udp::v4(), port))
 	{
 		_Socket.async_receive_from(
 			boost::asio::buffer(data_, max_length), _SenderEndpoint,
-			boost::bind(&server::handle_receive_from, this,
+			boost::bind(&Osc::handle_receive_from, this,
 				boost::asio::placeholders::error,
 				boost::asio::placeholders::bytes_transferred));
 	}
@@ -37,7 +37,7 @@ public:
 		{
 			_Socket.async_send_to(
 				boost::asio::buffer(data_, bytes_recvd), _SenderEndpoint,
-				boost::bind(&server::handle_send_to, this,
+				boost::bind(&Osc::handle_send_to, this,
 					boost::asio::placeholders::error,
 					boost::asio::placeholders::bytes_transferred));
 		}
@@ -45,7 +45,7 @@ public:
 		{
 			_Socket.async_receive_from(
 				boost::asio::buffer(data_, max_length), _SenderEndpoint,
-				boost::bind(&server::handle_receive_from, this,
+				boost::bind(&Osc::handle_receive_from, this,
 					boost::asio::placeholders::error,
 					boost::asio::placeholders::bytes_transferred));
 		}
@@ -56,7 +56,7 @@ public:
 	{
 		_Socket.async_receive_from(
 			boost::asio::buffer(data_, max_length), _SenderEndpoint,
-			boost::bind(&server::handle_receive_from, this,
+			boost::bind(&Osc::handle_receive_from, this,
 				boost::asio::placeholders::error,
 				boost::asio::placeholders::bytes_transferred));
 	}
@@ -65,7 +65,7 @@ public:
 	{
 		try
 		{
-			server s(_IoService, _ComPort);
+			Osc s(_IoService, _ComPort);
 			_IoService.run();
 		}
 		catch (std::exception& e)
