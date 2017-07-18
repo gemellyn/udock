@@ -321,8 +321,12 @@ class MoleculesManager
 			double contact;
 			double charge;
 
+			float scoreTotal = 0.0f;
+
 			for(int i=0;i<mol1->_NbAtomes;i++)
 			{
+				float score = 0.0f;
+
 				pos1 = AtomesTransformesMol1[i]._Pos;
 				radius1 = AtomesTransformesMol1[i]._Radius;
 				charge1 = AtomesTransformesMol1[i]._Charge;
@@ -361,6 +365,10 @@ class MoleculesManager
 						//Total
 						energy += contact + charge;
 
+						//atomeScore
+						score += std::abs(contact + charge);
+						
+
 						//Suivant
 						atomek = (Atome*) (atomek->_NextInBucket);
 
@@ -369,11 +377,12 @@ class MoleculesManager
 					}
 				}
 				//update score pour un atome;
-				updateEnergyScoreForAtome(UID, energy);
+				updateEnergyScoreForAtome(UID, score);
+				scoreTotal += score;
 			}
 
 			//Mise a jour du score pour la molécule
-			applyScoreChanges((MoleculeCubes*)mol1, energy);
+			applyScoreChanges((MoleculeCubes*)mol1, scoreTotal);
 
 			if(pEnergyContact)
 				*pEnergyContact = energyContact;
@@ -427,17 +436,27 @@ class MoleculesManager
 		//update the score of the associated vertices of a atom
 		void updateEnergyScoreForAtome(const unsigned int& UID, const float& energy)
 		{
-			std::pair<float, std::vector<size_t>>* entry = nullptr;
-			try {
-				entry = & (atomeMap->at(UID));
+			//precheck if element exist (may have been erased if empty) O(1)
+			if (atomeMap->find(UID) != atomeMap->end())
+			{
+				std::pair<float, std::vector<size_t>>* entry = nullptr;
+				try {
+					entry = &(atomeMap->at(UID));
+				}
+				catch (const std::out_of_range& oor) {
+					std::cerr << "Out of Range error: " << oor.what() << " UID : " << UID << '\n';
+					return;
+				}
+				//update score (will be proportionated on apply) 
+				if (!entry->second.empty())
+					entry->first = energy;
+				else
+				{
+					auto it = atomeMap->find(UID);
+					atomeMap->erase(it);
+				}
+					
 			}
-			catch (const std::out_of_range& oor) {
-				std::cerr << "Out of Range error: " << oor.what() << " UID : " << UID << '\n';
-				return;
-			}
-			//update score (will be proportionated on apply)
-			if(!entry->second.empty())
-				entry->first = energy;
 		}
 
 		void applyScoreChanges(MoleculeCubes* mol, const float& energyTotale)
@@ -445,8 +464,11 @@ class MoleculesManager
 			AtomeHashmap::iterator it = atomeMap->begin();
 			while (it != atomeMap->end())
 			{
-				//update score to have proportion based energy score
-				it->second.first /= energyTotale;
+				//update score to have proportion based energy score8
+				if (energyTotale != 0.0f)
+					it->second.first /= energyTotale;
+				else
+					it->second.first = 0.0f;
 				//fill the score for all vertex associated with current atome
 				std::fill(it->second.second.begin(), it->second.second.end(), it->second.first);
 				++it;
