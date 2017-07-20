@@ -462,18 +462,23 @@ class MoleculesManager
 		void applyScoreChanges(MoleculeCubes* mol, const float& energyTotale)
 		{
 			AtomeHashmap::iterator it = atomeMap->begin();
+			const float ratio = energyTotale / mol->_NbAtomes;
 			while (it != atomeMap->end())
 			{
 				//update score to have proportion based energy score8
 				if (energyTotale != 0.0f)
-					it->second.first /= energyTotale;
+					it->second.first /= ratio;
 				else
 					it->second.first = 0.0f;
 				//fill the score for all vertex associated with current atome
-				std::fill(it->second.second.begin(), it->second.second.end(), it->second.first);
+				for (const auto& i : it->second.second)
+				{
+					mol->_MCubes->_MolNrgy[i] = it->second.first;
+				}
 				++it;
 			}
-			//opengl buffer update (1call)
+			//opengl buffer update
+			mol->_MCubes->updateNrgySubData();
 		}
 
 		//initialize the hashmap for a given molecule

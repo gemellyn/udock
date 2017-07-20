@@ -2274,6 +2274,24 @@ public:
 		glPopMatrix();*/
 	}
 
+	void updateNrgySubData()
+	{
+		glBindBuffer(GL_ARRAY_BUFFER, _BufGeom);
+		glBindVertexArray(_VAO);
+
+		glBufferSubData(GL_ARRAY_BUFFER,
+		(	VBO_VerticesCount * SIZE_VERTICES +
+			VBO_VerticesCount * SIZE_NORMALS +
+			VBO_VerticesCount * SIZE_POLARITY) * sizeof(float),
+			VBO_VerticesCount * SIZE_ENERGY * sizeof(float),
+			_MolNrgy);
+
+		NYRenderer::checkGlError("Failed when setting values of energy in VBO");
+
+		glBindBuffer(GL_ARRAY_BUFFER, 0);
+		glBindVertexArray(0);
+	}
+
 	void renderFaces(void)
 	{
 		glPushMatrix();

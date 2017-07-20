@@ -1,31 +1,31 @@
 ENGINE_INFO [000000] LogFile added
-ENGINE_INFO [000000] LogScreen added
+ENGINE_INFO [000001] LogScreen added
 ENGINE_INFO [000000] arg w asking window mode
 ENGINE_INFO [000000] arg l asking to show full log
 ENGINE_INFO [000000] arg a asking for admin ui
-ENGINE_INFO [000000] arg d asking for total disconected
-ENGINE_INFO [000061] SDL Init Ok
-ENGINE_INFO [001159] SDL Window Ok
-ENGINE_INFO [000014] SDL GL context Ok
-ENGINE_INFO [000006] GLEW init Ok
-ENGINE_INFO [000009] Reset FBO
-ENGINE_INFO [000087] Shader shaders/postprocess/pshader.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/postprocess/pshader.glsl : 0(67) : warning C7533: global variable gl_TexCoord is deprecated after version 120
+ENGINE_INFO [000001] arg d asking for total disconected
+ENGINE_INFO [000098] SDL Init Ok
+ENGINE_INFO [001244] SDL Window Ok
+ENGINE_INFO [000013] SDL GL context Ok
+ENGINE_INFO [000008] GLEW init Ok
+ENGINE_INFO [000010] Reset FBO
+ENGINE_INFO [000065] Shader shaders/postprocess/pshader.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/postprocess/pshader.glsl : 0(67) : warning C7533: global variable gl_TexCoord is deprecated after version 120
 0(271) : warning C7533: global variable gl_FragColor is deprecated after version 120
 
 ENGINE_INFO [000001] Reset FBO
-ENGINE_INFO [000019] OpenGL version 4.5.0 NVIDIA 382.05
+ENGINE_INFO [000027] OpenGL version 4.5.0 NVIDIA 382.33
 ENGINE_INFO [000000] Shader shaders/psmol.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/psmol.glsl : 
-ENGINE_INFO [000001] Shader shaders/vsmol.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/psmol.glsl : 
+ENGINE_INFO [000021] Shader shaders/vsmol.glsl compilation ok
 ENGINE_INFO [000000] Compile res shaders/vsmol.glsl : 
-ENGINE_INFO [000001] Shader shaders/sphere/psmol.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/sphere/psmol.glsl : 
+ENGINE_INFO [000027] Shader shaders/sphere/psmol.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/sphere/psmol.glsl : 
 ENGINE_INFO [000001] Shader shaders/sphere/vsmol.glsl compilation ok
-ENGINE_INFO [000000] Compile res shaders/sphere/vsmol.glsl : 
+ENGINE_INFO [000001] Compile res shaders/sphere/vsmol.glsl : 
 ENGINE_INFO [000001] Shader shaders/sphere/gsmol.glsl compilation ok
 ENGINE_INFO [000000] Compile res shaders/sphere/gsmol.glsl : 
-ENGINE_INFO [000001] Shader shaders/sphere/sphere_mix/pshader.glsl compilation ok
+ENGINE_INFO [000002] Shader shaders/sphere/sphere_mix/pshader.glsl compilation ok
 ENGINE_INFO [000001] Compile res shaders/sphere/sphere_mix/pshader.glsl : 0(33) : warning C7011: implicit cast from "int" to "float"
 0(34) : warning C7011: implicit cast from "int" to "float"
 0(36) : warning C7011: implicit cast from "int" to "float"
@@ -37,73 +37,180 @@ ENGINE_INFO [000001] Compile res shaders/sphere/sphere_mix/pshader.glsl : 0(33) 
 0(52) : warning C7011: implicit cast from "int" to "float"
 0(52) : warning C7011: implicit cast from "int" to "float"
 
-ENGINE_INFO [000001] Shader shaders/smooth/proj/ps.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/smooth/proj/ps.glsl : 
+ENGINE_INFO [000002] Shader shaders/smooth/proj/ps.glsl compilation ok
+ENGINE_INFO [000000] Compile res shaders/smooth/proj/ps.glsl : 
 ENGINE_INFO [000001] Shader shaders/smooth/proj/vs.glsl compilation ok
-ENGINE_INFO [000000] Compile res shaders/smooth/proj/vs.glsl : 
-ENGINE_INFO [000001] Shader shaders/smooth/proj/gs.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/smooth/proj/vs.glsl : 
+ENGINE_INFO [000000] Shader shaders/smooth/proj/gs.glsl compilation ok
 ENGINE_INFO [000000] Compile res shaders/smooth/proj/gs.glsl : 
 ENGINE_INFO [000001] Shader shaders/smooth/smooth/pshader.glsl compilation ok
 ENGINE_INFO [000001] Compile res shaders/smooth/smooth/pshader.glsl : 0(22) : warning C7533: global variable gl_TexCoord is deprecated after version 120
 0(55) : warning C7533: global variable gl_FragColor is deprecated after version 120
 
-ENGINE_INFO [000000] Shader shaders/smooth/final/ps.glsl compilation ok
-ENGINE_INFO [000000] Compile res shaders/smooth/final/ps.glsl : 
+ENGINE_INFO [000001] Shader shaders/smooth/final/ps.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/smooth/final/ps.glsl : 
 ENGINE_INFO [000000] Shader shaders/smooth/final/vs.glsl compilation ok
-ENGINE_INFO [000001] Compile res shaders/smooth/final/vs.glsl : 
-ENGINE_INFO [000001] Shader shaders/smooth/final/gs.glsl compilation ok
-ENGINE_INFO [000000] Compile res shaders/smooth/final/gs.glsl : 
+ENGINE_INFO [000000] Compile res shaders/smooth/final/vs.glsl : 
+ENGINE_INFO [000000] Shader shaders/smooth/final/gs.glsl compilation ok
+ENGINE_INFO [000001] Compile res shaders/smooth/final/gs.glsl : 
 ENGINE_INFO [000001] Reset FBO
-ENGINE_INFO [000189] Starting login job
+ENGINE_INFO [000186] Starting login job
 ENGINE_INFO [000001] Log to analytics mytho, total deco
 ENGINE_INFO [000000] Checking user login (mytho)
-ENGINE_INFO [000002] Reset FBO
-ENGINE_INFO [000001] End of login job
-USER_INFO [000021] Login ok
-ENGINE_INFO [000003] Starting upload job
+ENGINE_INFO [000001] Reset FBO
+ENGINE_INFO [000000] End of login job
+USER_INFO [000031] Login ok
+ENGINE_INFO [000005] Starting upload job
 ENGINE_INFO [000001] Uploading log file (mytho)
-ENGINE_INFO [000000] End of upload job
-ENGINE_INFO [000047] Getting leaderboard from server (mytho)
-ENGINE_INFO [000001] Getting mol list from disc
-ENGINE_INFO [005735] Activation of load state
-ENGINE_INFO [000000] Load state : removing molecules
+ENGINE_INFO [000001] End of upload job
+ENGINE_INFO [000062] Getting leaderboard from server (mytho)
+ENGINE_INFO [000000] Getting mol list from disc
+ENGINE_INFO [012165] Activation of load state
+ENGINE_INFO [000001] Load state : removing molecules
 ENGINE_INFO [000000] Load state : loading first mol from import/1.mol2
-ENGINE_INFO [000001] Loading mol import/1.mol2
-ENGINE_INFO [000153] Making geometry
-ENGINE_INFO [000004] Marching cubes : allocating 0.314713Mo for 13750 cubes
-USER_INFO [000000] Making molecule geometry for SAS only
-USER_INFO [000000] Making SAS for 1700 atomes
-USER_INFO [000029] SAS ok
+ENGINE_INFO [000002] Loading mol import/1.mol2
+ENGINE_INFO [000008] Making geometry
+ENGINE_INFO [000012] Marching cubes : allocating 11.0602Mo for 483226 cubes
+USER_INFO [000000] Making molecule geometry for SES
+USER_INFO [000001] Making SAS for 1700 atomes
+ENGINE_INFO [000105] Cubes ok
+USER_INFO [000001] Contracting SAS to SES
+ENGINE_INFO [000044] End of surface contration threads
+ENGINE_INFO [000007] Contraction done in 0.0549305 ms
+USER_INFO [000001] Making van des Walls part for 1700 atomes
+USER_INFO [000049] Van der Walls done
+USER_INFO [000000] Calculating Electrostatics
+USER_INFO [000073] Electrostatics done
 ENGINE_INFO [000000] Loading thread ok
-ENGINE_INFO [000013] Load state : first mol loaded
-ENGINE_INFO [000001] Outputing geometry to opengl
-ENGINE_INFO [000091] Saved to obj file mol1.obj
+ENGINE_INFO [000016] Load state : first mol loaded
+ENGINE_INFO [000000] Outputing geometry to opengl
+ENGINE_INFO [000000] Lissage des normales
+ENGINE_INFO [000323] Saved to obj file mol1.obj
 ENGINE_INFO [000001] Building trimesh shape from geometry
-ENGINE_INFO [000009] Building trimesh shape of 12048 vertices
-ENGINE_INFO [000113] Trimesh shape done
-ENGINE_INFO [000001] Adding molecule 056CED50 with body 00000000 to physic engine
-ENGINE_INFO [000005] Releasing cubes memory
-ENGINE_INFO [000000] Releasing cubes temp geometry
-ENGINE_INFO [000000] Release done
-ENGINE_INFO [001989] Load state : loading second mol from import/2.mol2
-ENGINE_INFO [000001] Loading mol import/2.mol2
-ENGINE_INFO [000129] Making geometry
-ENGINE_INFO [000003] Marching cubes : allocating 0.241699Mo for 10560 cubes
-USER_INFO [000000] Making molecule geometry for SAS only
-USER_INFO [000000] Making SAS for 1402 atomes
-USER_INFO [000022] SAS ok
+ENGINE_INFO [000006] Building trimesh shape of 122400 vertices
+ENGINE_INFO [000021] Trimesh shape done
+ENGINE_INFO [000001] Adding molecule 0F3D7580 with body 00000000 to physic engine
+ENGINE_INFO [000001] Releasing cubes memory
+ENGINE_INFO [000007] Releasing cubes temp geometry
+ENGINE_INFO [000001] Release done
+ENGINE_INFO [000473] Load state : loading second mol from import/1.mol2
+ENGINE_INFO [000002] Loading mol import/1.mol2
+ENGINE_INFO [000008] Making geometry
+ENGINE_INFO [000016] Marching cubes : allocating 11.0602Mo for 483226 cubes
+USER_INFO [000000] Making molecule geometry for SES
+USER_INFO [000001] Making SAS for 1700 atomes
+ENGINE_INFO [000102] Cubes ok
+USER_INFO [000000] Contracting SAS to SES
+ENGINE_INFO [000048] End of surface contration threads
+ENGINE_INFO [000008] Contraction done in 0.0597262 ms
+USER_INFO [000000] Making van des Walls part for 1700 atomes
+USER_INFO [000051] Van der Walls done
+USER_INFO [000001] Calculating Electrostatics
+USER_INFO [000076] Electrostatics done
 ENGINE_INFO [000000] Loading thread ok
-ENGINE_INFO [000002] Load state : second mol loaded
-ENGINE_INFO [000001] Outputing geometry to opengl
-ENGINE_INFO [000085] Saved to obj file mol2.obj
+ENGINE_INFO [000011] Load state : second mol loaded
+ENGINE_INFO [000000] Outputing geometry to opengl
+ENGINE_INFO [000000] Lissage des normales
+ENGINE_INFO [000314] Saved to obj file mol2.obj
 ENGINE_INFO [000000] Building trimesh shape from geometry
-ENGINE_INFO [000007] Building trimesh shape of 9924 vertices
-ENGINE_INFO [000075] Trimesh shape done
-ENGINE_INFO [000001] Adding molecule 059C34E0 with body 00000000 to physic engine
-ENGINE_INFO [000004] Releasing cubes memory
-ENGINE_INFO [000000] Releasing cubes temp geometry
-ENGINE_INFO [000000] Release done
-ENGINE_INFO [001372] Molecules loaded ok
-ENGINE_INFO [000000] We lost 5400ko during molecules loading process
-ENGINE_INFO [000001] Tutorial : Activate at step -1
+ENGINE_INFO [000007] Building trimesh shape of 122400 vertices
+ENGINE_INFO [000021] Trimesh shape done
+ENGINE_INFO [000000] Adding molecule 1154ACA0 with body 00000000 to physic engine
+ENGINE_INFO [000002] Releasing cubes memory
+ENGINE_INFO [000008] Releasing cubes temp geometry
+ENGINE_INFO [000001] Release done
+ENGINE_INFO [000490] Molecules loaded ok
+ENGINE_INFO [000000] We lost 37760ko during molecules loading process
+ENGINE_INFO [000000] Tutorial : Activate at step -1
 ENGINE_INFO [000003] Getting scores from server (mytho)
+ENGINE_INFO [016133] Fist step of optim
+ENGINE_INFO [000000] Removing molecule 0F3D7580 with body 055B0458 to physic engine
+ENGINE_INFO [000000] Removing molecule 1154ACA0 with body 10F47F48 to physic engine
+ENGINE_INFO [000037] Starting optim : -16.4448
+ENGINE_INFO [000214] Ended opt step : -16.4448 -> -31.2806 265 4/6
+ENGINE_INFO [000001] Step params : trans = 0.4769 rot =0.119858
+ENGINE_INFO [000070] Starting optim : -31.2806
+ENGINE_INFO [000219] Ended opt step : -31.2806 -> -37.545 256 3/6
+ENGINE_INFO [000001] Step params : trans = 0.4548 rot =0.114304
+ENGINE_INFO [000075] Starting optim : -37.545
+ENGINE_INFO [000217] Ended opt step : -37.545 -> -40.5311 255 1/6
+ENGINE_INFO [000000] Step params : trans = 0.4327 rot =0.108749
+ENGINE_INFO [000072] Starting optim : -40.5311
+ENGINE_INFO [000219] Ended opt step : -40.5311 -> -40.5311 257 0/6
+ENGINE_INFO [000000] Step params : trans = 0.4105 rot =0.10317
+ENGINE_INFO [000077] Starting optim : -40.5311
+ENGINE_INFO [000218] Ended opt step : -40.5311 -> -40.5311 262 0/6
+ENGINE_INFO [000001] Step params : trans = 0.3881 rot =0.0975402
+ENGINE_INFO [000076] Starting optim : -40.5311
+ENGINE_INFO [000213] Ended opt step : -40.5311 -> -40.5311 253 0/6
+ENGINE_INFO [000000] Step params : trans = 0.3663 rot =0.0920612
+ENGINE_INFO [000075] Starting optim : -40.5311
+ENGINE_INFO [000223] Ended opt step : -40.5311 -> -40.5311 269 0/6
+ENGINE_INFO [000000] Step params : trans = 0.3433 rot =0.0862807
+ENGINE_INFO [000071] Starting optim : -40.5311
+ENGINE_INFO [000215] Ended opt step : -40.5311 -> -40.5311 253 0/6
+ENGINE_INFO [000000] Step params : trans = 0.3215 rot =0.0808018
+ENGINE_INFO [000072] Starting optim : -40.5311
+ENGINE_INFO [000219] Ended opt step : -40.5311 -> -40.5311 256 0/6
+ENGINE_INFO [000000] Step params : trans = 0.2994 rot =0.0752474
+ENGINE_INFO [000076] Starting optim : -40.5311
+ENGINE_INFO [000218] Ended opt step : -40.5311 -> -40.5311 256 0/6
+ENGINE_INFO [000000] Step params : trans = 0.2773 rot =0.0696931
+ENGINE_INFO [000074] Starting optim : -40.5311
+ENGINE_INFO [000213] Ended opt step : -40.5311 -> -41.1826 251 1/6
+ENGINE_INFO [000000] Step params : trans = 0.2557 rot =0.0642644
+ENGINE_INFO [000076] Starting optim : -41.1826
+ENGINE_INFO [000215] Ended opt step : -41.1826 -> -41.1826 257 0/6
+ENGINE_INFO [000000] Step params : trans = 0.2338 rot =0.0587603
+ENGINE_INFO [000072] Starting optim : -41.1826
+ENGINE_INFO [000237] Ended opt step : -41.1826 -> -41.1826 276 0/6
+ENGINE_INFO [000000] Step params : trans = 0.2103 rot =0.0528542
+ENGINE_INFO [000077] Starting optim : -41.1826
+ENGINE_INFO [000214] Ended opt step : -41.1826 -> -41.1826 257 0/6
+ENGINE_INFO [000001] Step params : trans = 0.1885 rot =0.0473752
+ENGINE_INFO [000075] Starting optim : -41.1826
+ENGINE_INFO [000218] Ended opt step : -41.1826 -> -41.1826 257 0/6
+ENGINE_INFO [000000] Step params : trans = 0.1664 rot =0.0418209
+ENGINE_INFO [000075] Starting optim : -41.1826
+ENGINE_INFO [000214] Ended opt step : -41.1826 -> -41.1826 256 0/6
+ENGINE_INFO [000001] Step params : trans = 0.1443 rot =0.0362665
+ENGINE_INFO [000074] Starting optim : -41.1826
+ENGINE_INFO [000225] Ended opt step : -41.1826 -> -41.73 264 1/6
+ENGINE_INFO [000000] Step params : trans = 0.1215 rot =0.0305363
+ENGINE_INFO [000073] Starting optim : -41.73
+ENGINE_INFO [000216] Ended opt step : -41.73 -> -41.73 254 0/6
+ENGINE_INFO [000001] Step params : trans = 0.0995 rot =0.0250071
+ENGINE_INFO [000078] Starting optim : -41.73
+ENGINE_INFO [000211] Ended opt step : -41.73 -> -44.0338 253 1/6
+ENGINE_INFO [000001] Step params : trans = 0.0779 rot =0.0195784
+ENGINE_INFO [000071] Starting optim : -44.0338
+ENGINE_INFO [000216] Ended opt step : -44.0338 -> -44.0338 254 0/6
+ENGINE_INFO [000001] Step params : trans = 0.056 rot =0.0140743
+ENGINE_INFO [000077] Starting optim : -44.0338
+ENGINE_INFO [000213] Ended opt step : -44.0338 -> -44.0338 258 0/6
+ENGINE_INFO [000000] Step params : trans = 0.0341 rot =0.00857027
+ENGINE_INFO [000072] Starting optim : -44.0338
+ENGINE_INFO [000219] Ended opt step : -44.0338 -> -44.0338 256 0/6
+ENGINE_INFO [000001] Step params : trans = 0.012 rot =0.00301593
+ENGINE_INFO [000074] Starting optim : -44.0338
+ENGINE_INFO [000220] Ended opt step : -44.0338 -> -44.06 261 2/6
+ENGINE_INFO [000001] Step params : trans = 0 rot =0
+ENGINE_INFO [000000] Last step of optim
+ENGINE_INFO [000037] Tutorial : Goto step 3
+ENGINE_INFO [000001] Tutorial : Activate at step 3
+USER_INFO [000001] New best highscore : -44.06
+ENGINE_INFO [000003] Adding molecule 0F3D7580 with body 00000000 to physic engine
+ENGINE_INFO [000001] Adding molecule 1154ACA0 with body 00000000 to physic engine
+ENGINE_INFO [000001] Removing molecule 0F3D7580 with body 11157318 to physic engine
+ENGINE_INFO [000000] Removing molecule 1154ACA0 with body 11157070 to physic engine
+ENGINE_INFO [000000] Adding molecule 0F3D7580 with body 00000000 to physic engine
+ENGINE_INFO [000001] Adding molecule 1154ACA0 with body 00000000 to physic engine
+ENGINE_INFO [000001] Ended optimization : 138 steps in 5936ms,
+	366M atom couples evaluated,
+	16.2136ns per couple
+ENGINE_INFO [000036] Starting post scores job
+ENGINE_INFO [000001] Posting scores to server (mytho)
+ENGINE_INFO [000000] End of upload job
+ENGINE_INFO [011459] Starting add play time job
+ENGINE_INFO [000002] Adding play time to server (mytho)
+ENGINE_INFO [000000] End of add play time job
