@@ -322,6 +322,7 @@ class MoleculesManager
 			double charge;
 
 			float scoreTotal = 0.0f;
+			float maxScore = 0.0f;
 
 			for(int i=0;i<mol1->_NbAtomes;i++)
 			{
@@ -378,11 +379,12 @@ class MoleculesManager
 				}
 				//update score pour un atome;
 				updateEnergyScoreForAtome(UID, score);
+				if (maxScore < score) maxScore = score;
 				scoreTotal += score;
 			}
 
 			//Mise a jour du score pour la molécule
-			applyScoreChanges((MoleculeCubes*)mol1, scoreTotal);
+			applyScoreChanges((MoleculeCubes*)mol1, scoreTotal, maxScore);
 
 			if(pEnergyContact)
 				*pEnergyContact = energyContact;
@@ -459,15 +461,21 @@ class MoleculesManager
 			}
 		}
 
-		void applyScoreChanges(MoleculeCubes* mol, const float& energyTotale)
+		void applyScoreChanges(MoleculeCubes* mol, const float& energyTotale, const float& energyMax)
 		{
+			//todo get biggest score, clamp score between 0 and 1 !
 			AtomeHashmap::iterator it = atomeMap->begin();
 			const float ratio = energyTotale / mol->_NbAtomes;
+			const float clampRatio = energyMax / ratio;
 			while (it != atomeMap->end())
 			{
-				//update score to have proportion based energy score8
+				//update score to have proportion based energy score
 				if (energyTotale != 0.0f)
+				{
 					it->second.first /= ratio;
+					//clamp 0 1
+					it->second.first /= clampRatio;
+				}
 				else
 					it->second.first = 0.0f;
 				//fill the score for all vertex associated with current atome

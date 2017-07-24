@@ -61,9 +61,8 @@ void main()
 
 	if(vs_nrgy_in > 0)
 	{
-		vs_color_out = vec4(0,0,0,1);
+		vs_color_out = mix(vs_color_out, vec4(0,vs_nrgy_in,0,1), vs_nrgy_in);
 	}
 
 	vs_color_out.a = vs_color_in.a;
-	
 }
