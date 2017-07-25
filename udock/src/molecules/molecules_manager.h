@@ -463,7 +463,6 @@ class MoleculesManager
 
 		void applyScoreChanges(MoleculeCubes* mol, const float& energyTotale, const float& energyMax)
 		{
-			//todo get biggest score, clamp score between 0 and 1 !
 			AtomeHashmap::iterator it = atomeMap->begin();
 			const float ratio = energyTotale / mol->_NbAtomes;
 			const float clampRatio = energyMax / ratio;

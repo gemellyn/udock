@@ -2336,13 +2336,12 @@ public:
 		NYRenderer::getInstance()->sendOglMatToShader();
 
 		glDrawArrays(GL_TRIANGLES, 0, VBO_VerticesCount);
-		NYRenderer::checkGlError("glDrawArrays(GL_TRIANGLES,0,_NbVertices);");
+		NYRenderer::checkGlError("glDrawArrays(GL_TRIANGLES,0,VBO_VerticesCount);");
 
 		glDisable(GL_COLOR_MATERIAL);
 		glDisable(GL_LIGHTING);
 		glPopMatrix();
 	}
-
 };
 
 #endif
