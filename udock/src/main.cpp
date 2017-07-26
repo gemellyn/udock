@@ -1092,7 +1092,7 @@ void keyboard_key(int key, bool down)
 
 		if(key == SDL_SCANCODE_F12)
 		{
-			g_program_mol = g_renderer->createProgram("shaders/psmol.glsl","shaders/vsmol.glsl");
+			g_program_mol = g_renderer->createProgram("shaders/psmol.glsl", "shaders/vsmol.glsl", "shaders/gsmol.glsl");
 			g_program_spherique = g_renderer->createProgram("shaders/sphere/psmol.glsl","shaders/sphere/vsmol.glsl","shaders/sphere/gsmol.glsl");
 			g_program_spherique_mix = g_renderer->createProgram("shaders/sphere/sphere_mix/pshader.glsl");
 			g_program_smooth_proj  = g_renderer->createProgram("shaders/smooth/proj/ps.glsl","shaders/smooth/proj/vs.glsl","shaders/smooth/proj/gs.glsl");
@@ -1942,7 +1942,7 @@ int main(int argc, char* argv[])
 	Log::log(Log::ENGINE_INFO,("OpenGL version "+std::string((char*)glGetString(GL_VERSION))).c_str());
 
 	//Creation du programme de rendu des molecules
-	g_program_mol = g_renderer->createProgram("shaders/psmol.glsl","shaders/vsmol.glsl");
+	g_program_mol = g_renderer->createProgram("shaders/psmol.glsl","shaders/vsmol.glsl", "shaders/gsmol.glsl");
 	g_program_spherique = g_renderer->createProgram("shaders/sphere/psmol.glsl","shaders/sphere/vsmol.glsl","shaders/sphere/gsmol.glsl");
 	g_program_spherique_mix = g_renderer->createProgram("shaders/sphere/sphere_mix/pshader.glsl");
 	g_program_smooth_proj  = g_renderer->createProgram("shaders/smooth/proj/ps.glsl","shaders/smooth/proj/vs.glsl","shaders/smooth/proj/gs.glsl");
