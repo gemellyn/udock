@@ -35,7 +35,7 @@ void main()
 	final_color = VertexIn.color * (DiffuseTerm*(1-ambientLevel) + ambientLevel);
 	
 
-	if(Bord < tailleCerne)
+	if(Bord < tailleCerne && VertexIn.nrgy > 0)
 		final_color *= 0.4;
 
 	final_color.a = VertexIn.color.a;

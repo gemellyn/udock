@@ -67,5 +67,7 @@ void main()
 		VertexOut.color = mix(VertexOut.color, vec4(0,vs_nrgy_in,0,1), vs_nrgy_in);
 	}
 
+	VertexOut.nrgy = vs_nrgy_in;
+
 	VertexOut.color.a = vs_color_in.a;
 }
