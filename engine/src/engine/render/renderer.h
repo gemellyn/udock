@@ -1027,7 +1027,7 @@ class NYRenderer
 				glEnable(GL_LIGHTING);
 				glEnable(GL_BLEND);
 				glEnable(GL_DEPTH_TEST);
-				//glEnable(GL_CULL_FACE);
+				glEnable(GL_CULL_FACE);
 
 				//Rendu de la scène
 				if (_RenderObjectsFun != NULL)

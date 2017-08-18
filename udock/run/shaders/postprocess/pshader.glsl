@@ -25,9 +25,6 @@ float LinearizeDepth(float z)
 
 	float z_n = z;//2.0 * z - 1.0;
 	float z_e = (2.0 * zNear * zFar) / (zFar + zNear - z_n * (zFar - zNear));
-
-
-
 	return z_e;
 }
 
@@ -44,7 +41,6 @@ float my_lerp(float a, float b, float alpha){
 
 vec3 saturate_color(vec3 color)
 {
-	
 	vec3 finalc = color;
 	for(int i=0;i<3;i++)
 		if(color[i] > 1)
@@ -252,10 +248,11 @@ void main (void)
 
 		
 	//Cerné
+	/*
 	if(sommedepth > 0.1)
 	{
 		color *= 0.5;
-	} 
+	} */
 	
 	color *= (1-facVign) ;
 

@@ -62,10 +62,12 @@ void main()
 			VertexOut.color = colorPositif * (1-vs_color_in.b) + colorNeutre * vs_color_in.b;
 	}
 
+	//energie debug
+	/*
 	if(vs_nrgy_in > 0)
 	{
 		VertexOut.color = mix(VertexOut.color, vec4(0,vs_nrgy_in,0,1), vs_nrgy_in);
-	}
+	}*/
 
 	VertexOut.nrgy = vs_nrgy_in;
 
